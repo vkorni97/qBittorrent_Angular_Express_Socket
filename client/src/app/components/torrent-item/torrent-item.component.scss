@@ -1,0 +1,100 @@
+.itemContainer {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+
+  .item {
+    display: flex;
+    align-items: center;
+  }
+
+  &:hover,
+  &.selected {
+    background-color: rgba($color: #000000, $alpha: 0.2);
+
+    .row {
+      .name,
+      .speed {
+        color: rgb(var(--color1));
+      }
+    }
+  }
+
+  .flexMax {
+    flex: 1;
+    max-width: 130px;
+  }
+
+  .col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    mat-icon {
+      font-size: 20px;
+      margin-right: 5px;
+    }
+
+    .text {
+      display: flex;
+    }
+
+    .name {
+      flex: 1;
+      overflow: hidden;
+      display: grid;
+
+      div {
+        margin-right: 10px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+    }
+  }
+
+  .speed {
+    display: flex;
+
+    .upload {
+      color: rgb(var(--color1));
+    }
+    .download {
+      color: rgb(var(--color2));
+    }
+
+    .download,
+    .upload {
+      display: flex;
+      align-items: center;
+
+      mat-icon {
+        font-size: 15px;
+      }
+
+      & > div {
+        display: flex;
+        width: 90px;
+      }
+    }
+  }
+}
+
+.statusIcon {
+  margin-right: 10px;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.margin {
+  margin: 0 5px;
+}

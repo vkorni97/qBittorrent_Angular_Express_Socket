@@ -1,0 +1,9 @@
+<div class="collapseContainer" [@preventAnimation]>
+  <div class="titleContainer" [ngClass]="{'collapsed': isCollapsed}" (click)="handleCollapse()">
+    <mat-icon>expand_more</mat-icon>
+    <div class="title">{{title}}</div>
+  </div>
+  <div class="menuContainer" *ngIf="!isCollapsed" [@animateItems]>
+    <ng-content></ng-content>
+  </div>
+</div>

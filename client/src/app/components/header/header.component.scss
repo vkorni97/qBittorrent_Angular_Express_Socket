@@ -1,0 +1,38 @@
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+  margin: 5px;
+  margin-bottom: 0;
+
+  .actionsContainer,
+  .routeContainer {
+    padding: 5px 10px;
+    display: flex;
+
+    mat-icon {
+      margin: 0 2px;
+      padding: 7px;
+      height: auto;
+      width: auto;
+      cursor: pointer;
+      font-size: 25px;
+      transition: all 0.15s ease-out;
+      border-radius: 4px;
+
+      &.active {
+        color: rgba(var(--color1), 1);
+      }
+
+      &:hover {
+        background-color: rgba($color: white, $alpha: 0.15);
+      }
+    }
+  }
+}
+
+.verticalLine {
+  margin: 0 10px;
+  width: 1px;
+  background-color: rgba(var(--font1), 0.15);
+}

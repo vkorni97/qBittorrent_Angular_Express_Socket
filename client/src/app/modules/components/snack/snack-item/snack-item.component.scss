@@ -1,0 +1,45 @@
+.itemContainer {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  //box-shadow: 0 0 10px 1px var(--shadow);
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  margin-top: 5px;
+  cursor: pointer;
+
+  &.red {
+    // background-color: rgba(var(--red), 0.1);
+    background-color: rgb(var(--red-light));
+    // background-blend-mode: difference;
+    color: rgb(var(--red));
+
+    .underline {
+      background-color: rgb(var(--red));
+    }
+  }
+  &.green {
+    background-color: rgb(var(--green-light));
+    color: rgb(var(--green));
+
+    .underline {
+      background-color: rgb(var(--green));
+    }
+  }
+
+  .item {
+    margin: 10px 20px;
+  }
+
+  .underline {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    //background-color: var(--font-1);
+  }
+}

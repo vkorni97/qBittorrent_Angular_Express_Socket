@@ -1,0 +1,4 @@
+<div class="snackContainer">
+  <app-snack-item *ngFor="let item of alerts" [item]="item" (onDelete)="handleDelete($event)" [@animateItem]>
+  </app-snack-item>
+</div>

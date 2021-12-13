@@ -1,0 +1,16 @@
+.inputBox {
+  .inputContainer {
+    display: flex;
+    input {
+      flex: 1;
+      font-size: 15px;
+      background-color: transparent;
+      border: 2px solid rgb(var(--bg-1));
+      padding: 8px 15px;
+      border-radius: 8px;
+      width: max-content;
+      margin: 0 5px;
+      color: rgb(var(--font-1));
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.itemContainer {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px 10px;
+  border-radius: 8px;
+  transition: color 0.25s ease-out;
+  // justify-content: space-between;
+
+  &.selected {
+    color: rgba($color: var(--color1), $alpha: 1);
+    background-color: rgba($color: #000000, $alpha: 0.25);
+  }
+
+  .textContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+
+    .text {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }
+
+  .badge {
+    margin-left: 10px;
+    padding: 0px 10px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: rgba($color: var(--color1), $alpha: 0.4);
+  }
+
+  mat-icon {
+    height: auto;
+    width: auto;
+    margin-right: 10px;
+  }
+
+  &:hover {
+    background-color: rgba($color: black, $alpha: 0.25);
+  }
+}

@@ -1,0 +1,18 @@
+<div class="pageContainer center">
+  <div class="formContainer">
+    <app-loading *ngIf="loading"></app-loading>
+    <div class="logo"></div>
+    <form [formGroup]="userGroup">
+      <div class="h6">Login</div>
+      <div class="row">
+        <app-input placeholder="Username" formControlName="username" class="input" type="text" [id]="'username'">
+        </app-input>
+        <app-input placeholder="Password" formControlName="password" class="input" type="password" [id]="'password'">
+        </app-input>
+      </div>
+    </form>
+    <div class="row">
+      <div class="primary-button" type="submit" (click)="handleSubmit()">Login</div>
+    </div>
+  </div>
+</div>

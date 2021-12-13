@@ -1,0 +1,38 @@
+<div class="pageContainer center">
+  <div class="formContainer">
+    <app-loading *ngIf="loading"></app-loading>
+    <div class="logo"></div>
+    <form [formGroup]="userGroup">
+      <!-- <div class="title h4 center">SET UP CLIENT</div> -->
+      <div class="h6">Register new user</div>
+      <div class="row">
+        <app-input placeholder="Username" formControlName="username" class="input" type="text" [id]="'username'">
+        </app-input>
+        <app-input placeholder="Password" formControlName="password" class="input" type="password" [id]="'password'">
+        </app-input>
+      </div>
+    </form>
+    <form [formGroup]="clientGroup">
+      <div class="h6">Webui data</div>
+      <div class="row">
+        <app-input placeholder="Client username" formControlName="username" class="input" type="text"
+          [id]="'client_username'">
+        </app-input>
+        <app-input placeholder="Client password (optional)" formControlName="password" class="input" type="password"
+          [id]="'client_password'">
+        </app-input>
+      </div>
+      <div class="row">
+        <app-input placeholder="Client host (http://localhost)" formControlName="host" class="input" type="text"
+          [id]="'client_host'">
+        </app-input>
+        <app-input placeholder="Client port (optional)" formControlName="port" class="input" type="text"
+          [id]="'client_port'">
+        </app-input>
+      </div>
+    </form>
+    <div class="row">
+      <div class="primary-button" type="submit" (click)="handleSubmit()">Create</div>
+    </div>
+  </div>
+</div>

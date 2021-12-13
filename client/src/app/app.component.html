@@ -1,0 +1,12 @@
+<div class="pageContainer" *ngIf="!loading; else loadingTemplate">
+  <app-header></app-header>
+  <div class="routerContainer">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+<app-snack></app-snack>
+
+<ng-template #loadingTemplate>
+  <app-loading></app-loading>
+</ng-template>

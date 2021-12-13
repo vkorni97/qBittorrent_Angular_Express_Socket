@@ -1,0 +1,14 @@
+.progressContainer {
+  margin: 5px 0;
+  position: relative;
+  overflow: hidden;
+  height: 8px;
+  border-radius: 50px;
+  width: 100%;
+  background-color: rgba($color: black, $alpha: 0.2);
+
+  .progress {
+    background-color: rgba($color: var(--color1), $alpha: 0.8);
+    height: 100%;
+  }
+}

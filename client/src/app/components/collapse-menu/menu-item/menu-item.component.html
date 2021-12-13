@@ -1,0 +1,9 @@
+<div class="itemContainer" [ngClass]="{'selected': selected}">
+  <div class="textContainer" title="{{text}}">
+    <mat-icon>{{icon}}</mat-icon>
+    <div class="text">{{text}}</div>
+  </div>
+  <div class="badge">
+    <ng-content></ng-content>
+  </div>
+</div>

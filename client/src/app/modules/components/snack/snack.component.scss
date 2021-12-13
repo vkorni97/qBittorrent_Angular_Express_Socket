@@ -1,0 +1,11 @@
+.snackContainer {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  width: 100%;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 10000;
+}

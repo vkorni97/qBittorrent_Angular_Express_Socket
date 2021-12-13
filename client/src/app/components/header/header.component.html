@@ -1,0 +1,23 @@
+<div class="headerContainer">
+  <div class="actionsContainer">
+    <mat-icon>note_add</mat-icon>
+    <mat-icon>add_link</mat-icon>
+    <div class="verticalLine"></div>
+    <mat-icon>delete</mat-icon>
+    <div class="verticalLine"></div>
+    <mat-icon>play_arrow</mat-icon>
+    <mat-icon>pause</mat-icon>
+    <div class="verticalLine"></div>
+    <mat-icon>settings</mat-icon>
+  </div>
+  <div class="routeContainer">
+    <mat-icon title="Dwonloads" [routerLink]="['']" [routerLinkActive]="'active'"
+      [routerLinkActiveOptions]="{exact: true}">
+      file_download
+    </mat-icon>
+    <mat-icon title="RSS feed" [routerLink]="['rss']" [routerLinkActive]="'active'"
+      [routerLinkActiveOptions]="{exact: false}">
+      rss_feed
+    </mat-icon>
+  </div>
+</div>

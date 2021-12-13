@@ -1,0 +1,91 @@
+.pageContainer {
+  display: flex;
+  flex-direction: row;
+  color: rgba(var(--font1), 0.8);
+  height: 100%;
+  max-height: calc(100vh - 54px);
+
+  .filterPanel {
+    display: block;
+    width: 350px;
+    min-width: 350px;
+    border-radius: 8px;
+    margin: 5px;
+    overflow-y: auto;
+
+    .speedContainer {
+      display: flex;
+
+      .download {
+        color: rgb(var(--color2));
+        flex-direction: row-reverse;
+      }
+      .upload {
+        color: rgb(var(--color1));
+      }
+
+      .download,
+      .upload {
+        padding: 10px;
+        padding-bottom: 0;
+        flex: 1;
+        display: flex;
+        font-weight: bold;
+        user-select: none;
+
+        mat-icon {
+          margin-top: 10px;
+          height: auto;
+          width: auto;
+          font-size: 30px;
+          transform: scaleX(0.7);
+          opacity: 0.7;
+        }
+
+        .speed {
+          ::ng-deep .number {
+            font-size: 32px;
+          }
+
+          ::ng-deep .unit {
+            font-size: 20px;
+            margin-left: 5px;
+            opacity: 0.7;
+          }
+        }
+
+        .transferred {
+          margin-top: -7px;
+
+          ::ng-deep .number {
+            font-style: italic;
+            font-size: 18px;
+          }
+
+          ::ng-deep .unit {
+            font-size: 12px;
+            margin-left: 5px;
+            opacity: 0.7;
+          }
+        }
+
+        .speed,
+        .transferred {
+          display: flex;
+          align-items: flex-end;
+        }
+      }
+    }
+  }
+
+  .downloadPanel {
+    //overflow: auto;
+    flex: 1;
+
+    .torrentContainer {
+      height: 100%;
+      overflow: hidden;
+      overflow-y: auto;
+    }
+  }
+}
