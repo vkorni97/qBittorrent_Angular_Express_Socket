@@ -9,10 +9,12 @@ import { SocketService } from './services/socket.service';
 })
 export class AppComponent {
   public loading: boolean;
+  public loggedIn: boolean;
 
   constructor(private io: SocketService, private auth: AuthService) {
     this.auth.state.subscribe((dt) => {
       this.loading = !dt;
+      this.loggedIn = dt == 'logged_in';
     });
   }
 }

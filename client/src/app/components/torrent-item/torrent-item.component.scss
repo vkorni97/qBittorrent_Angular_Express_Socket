@@ -4,6 +4,7 @@
   border-radius: 8px;
   overflow: hidden;
   cursor: pointer;
+  background-color: rgb(var(--bg-2));
 
   .item {
     display: flex;
@@ -17,7 +18,7 @@
     .row {
       .name,
       .speed {
-        color: rgb(var(--color1));
+        color: rgb(var(--color-1));
       }
     }
   }
@@ -38,6 +39,10 @@
     display: flex;
     align-items: center;
     overflow: hidden;
+
+    &.font-2 {
+      color: rgb(var(--font-2));
+    }
 
     mat-icon {
       font-size: 20px;
@@ -66,10 +71,10 @@
     display: flex;
 
     .upload {
-      color: rgb(var(--color1));
+      color: rgb(var(--color-2));
     }
     .download {
-      color: rgb(var(--color2));
+      color: rgb(var(--color-1));
     }
 
     .download,

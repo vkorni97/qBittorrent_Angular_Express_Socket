@@ -1,5 +1,5 @@
 <div class="pageContainer" *ngIf="!loading; else loadingTemplate">
-  <app-header></app-header>
+  <app-header *ngIf="loggedIn"></app-header>
   <div class="routerContainer">
     <router-outlet></router-outlet>
   </div>

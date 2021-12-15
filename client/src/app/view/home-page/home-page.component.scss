@@ -1,7 +1,7 @@
 .pageContainer {
   display: flex;
   flex-direction: row;
-  color: rgba(var(--font1), 0.8);
+  //color: rgba(var(--font-1), 0.8);
   height: 100%;
   max-height: calc(100vh - 54px);
 
@@ -12,16 +12,17 @@
     border-radius: 8px;
     margin: 5px;
     overflow-y: auto;
+    background-color: rgb(var(--bg-2));
 
     .speedContainer {
       display: flex;
 
       .download {
-        color: rgb(var(--color2));
+        color: rgb(var(--color-1));
         flex-direction: row-reverse;
       }
       .upload {
-        color: rgb(var(--color1));
+        color: rgb(var(--color-2));
       }
 
       .download,
@@ -81,6 +82,7 @@
   .downloadPanel {
     //overflow: auto;
     flex: 1;
+    padding-top: 5px;
 
     .torrentContainer {
       height: 100%;

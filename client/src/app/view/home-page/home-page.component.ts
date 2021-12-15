@@ -48,12 +48,12 @@ export class HomePageComponent implements OnInit, OnDestroy {
         {
           name: 'Download',
           data: this.chartData.data2,
-          color: '#39CE83',
+          color: '#79CEF0',
         },
         {
           name: 'Upload',
           data: this.chartData.data1,
-          color: '#00CCCC',
+          color: '#79E2A6',
         },
       ]);
     });

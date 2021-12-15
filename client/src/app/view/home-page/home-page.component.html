@@ -85,8 +85,8 @@
         [item]="item.value" [key]="item.key">
       </app-torrent-item> -->
       <app-torrent-item
-        *cdkVirtualFor="let item of torrents.getTorrent|keyvalue:sortByState|filter:selectedFilters:torrents.filters"
-        [item]="item.value" [key]="item.key">
+        *cdkVirtualFor="let item of torrents.getTorrent|keyvalue:sortByState|filter:selectedFilters:torrents.filters; let even = even"
+        [item]="item.value" [key]="item.key" [ngClass]="{'even': !even}">
       </app-torrent-item>
     </cdk-virtual-scroll-viewport>
   </div>

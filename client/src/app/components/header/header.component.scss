@@ -4,6 +4,7 @@
   border-radius: 8px;
   margin: 5px;
   margin-bottom: 0;
+  background-color: rgb(var(--bg-2));
 
   .actionsContainer,
   .routeContainer {
@@ -21,7 +22,7 @@
       border-radius: 4px;
 
       &.active {
-        color: rgba(var(--color1), 1);
+        color: rgba(var(--color-1), 1);
       }
 
       &:hover {
@@ -34,5 +35,5 @@
 .verticalLine {
   margin: 0 10px;
   width: 1px;
-  background-color: rgba(var(--font1), 0.15);
+  background-color: rgba(var(--font-1), 0.15);
 }

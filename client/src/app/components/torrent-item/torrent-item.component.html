@@ -1,16 +1,16 @@
 <div appTorrentItemContext class="itemContainer" [ngClass]="{ selected: item.selected }" (click)="handleSelect($event)">
   <div class="item">
     <ng-container [ngSwitch]="item.state">
-      <mat-icon class="statusIcon" [style]="'color: rgb(var(--color1)'" *ngSwitchCase="'pausedUP'">done</mat-icon>
-      <mat-icon class="statusIcon" [style]="'color: rgb(var(--color1)'" *ngSwitchCase="'uploading'">north</mat-icon>
-      <mat-icon class="statusIcon" [style]="'color: rgb(var(--color2)'" *ngSwitchCase="'stalledUP'">north</mat-icon>
+      <mat-icon class="statusIcon" [style]="'color: rgb(var(--color-1)'" *ngSwitchCase="'pausedUP'">done</mat-icon>
+      <mat-icon class="statusIcon" [style]="'color: rgb(var(--color-1)'" *ngSwitchCase="'uploading'">north</mat-icon>
+      <mat-icon class="statusIcon" [style]="'color: rgb(var(--color-2)'" *ngSwitchCase="'stalledUP'">north</mat-icon>
       <mat-icon class="statusIcon" *ngSwitchCase="'queuedUP'">north</mat-icon>
-      <mat-icon class="statusIcon" [style]="'color: rgb(var(--color1)'" *ngSwitchCase="'downloading'">south</mat-icon>
-      <mat-icon class="statusIcon" [style]="'color: rgb(var(--color1)'" *ngSwitchCase="'forcedDL'">south</mat-icon>
-      <mat-icon class="statusIcon" [style]="'color: rgb(var(--color2)'" *ngSwitchCase="'stalledDL'">south</mat-icon>
-      <mat-icon class="statusIcon" [style]="'color: rgb(var(--color2)'" *ngSwitchCase="'pausedDL'">pause</mat-icon>
+      <mat-icon class="statusIcon" [style]="'color: rgb(var(--color-1)'" *ngSwitchCase="'downloading'">south</mat-icon>
+      <mat-icon class="statusIcon" [style]="'color: rgb(var(--color-1)'" *ngSwitchCase="'forcedDL'">south</mat-icon>
+      <mat-icon class="statusIcon" [style]="'color: rgb(var(--color-2)'" *ngSwitchCase="'stalledDL'">south</mat-icon>
+      <mat-icon class="statusIcon" [style]="'color: rgb(var(--color-2)'" *ngSwitchCase="'pausedDL'">pause</mat-icon>
       <mat-icon class="statusIcon" *ngSwitchCase="'queuedDL'">south</mat-icon>
-      <mat-icon class="statusIcon" [style]="'color: rgb(var(--color1)'" *ngSwitchCase="'forcedUP'">north</mat-icon>
+      <mat-icon class="statusIcon" [style]="'color: rgb(var(--color-1)'" *ngSwitchCase="'forcedUP'">north</mat-icon>
       <mat-icon class="statusIcon" *ngSwitchDefault>track_changes</mat-icon>
     </ng-container>
 
@@ -32,7 +32,7 @@
           </div>
         </div>
       </div>
-      <div class="row">
+      <div class="row font-2">
         <div class="row flexMax" title="Downloaded">
           <mat-icon>south</mat-icon>
           <div class="text" [innerHtml]="item.downloaded | convertUnit"></div>
