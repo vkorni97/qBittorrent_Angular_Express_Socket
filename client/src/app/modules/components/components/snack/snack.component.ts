@@ -7,8 +7,8 @@ import {
   query,
 } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
-import { Alert } from '../interface';
-import { SnackService } from '../snack.service';
+import { Alert } from '../../interfaces/interface';
+import { SnackService } from '../../services/snack.service';
 
 @Component({
   selector: 'app-snack',

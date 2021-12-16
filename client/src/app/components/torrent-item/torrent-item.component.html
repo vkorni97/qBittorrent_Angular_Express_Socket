@@ -2,8 +2,8 @@
   <div class="item">
     <ng-container [ngSwitch]="item.state">
       <mat-icon class="statusIcon" [style]="'color: rgb(var(--color-1)'" *ngSwitchCase="'pausedUP'">done</mat-icon>
-      <mat-icon class="statusIcon" [style]="'color: rgb(var(--color-1)'" *ngSwitchCase="'uploading'">north</mat-icon>
-      <mat-icon class="statusIcon" [style]="'color: rgb(var(--color-2)'" *ngSwitchCase="'stalledUP'">north</mat-icon>
+      <mat-icon class="statusIcon" [style]="'color: rgb(var(--color-2)'" *ngSwitchCase="'uploading'">north</mat-icon>
+      <mat-icon class="statusIcon" [style]="'color: rgb(var(--color-1)'" *ngSwitchCase="'stalledUP'">north</mat-icon>
       <mat-icon class="statusIcon" *ngSwitchCase="'queuedUP'">north</mat-icon>
       <mat-icon class="statusIcon" [style]="'color: rgb(var(--color-1)'" *ngSwitchCase="'downloading'">south</mat-icon>
       <mat-icon class="statusIcon" [style]="'color: rgb(var(--color-1)'" *ngSwitchCase="'forcedDL'">south</mat-icon>

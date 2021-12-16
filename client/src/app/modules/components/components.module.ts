@@ -1,15 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LoadingComponent } from './loading/loading.component';
-import { InputComponent } from './input/input.component';
-import { CheckboxComponent } from './checkbox/checkbox.component';
-import { RadioComponent } from './radio/radio.component';
-import { SelectComponent } from './select/select.component';
-import { TextareaComponent } from './textarea/textarea.component';
-import { SnackComponent } from './snack/snack.component';
-import { SnackItemComponent } from './snack/snack-item/snack-item.component';
+import { LoadingComponent } from './components/loading/loading.component';
+import { InputComponent } from './components/input/input.component';
+import { CheckboxComponent } from './components/checkbox/checkbox.component';
+import { RadioComponent } from './components/radio/radio.component';
+import { SelectComponent } from './components/select/select.component';
+import { TextareaComponent } from './components/textarea/textarea.component';
+import { SnackComponent } from './components/snack/snack.component';
+import { SnackItemComponent } from './components/snack/snack-item/snack-item.component';
 import { FormsModule } from '@angular/forms';
-import { SnackService } from './snack.service';
+import { HintDirective } from './directives/hint.directive';
+import { TooltipComponent } from './components/tooltip/tooltip.component';
+import { OverlayModule } from '@angular/cdk/overlay';
 
 @NgModule({
   declarations: [
@@ -21,8 +23,10 @@ import { SnackService } from './snack.service';
     TextareaComponent,
     SnackComponent,
     SnackItemComponent,
+    HintDirective,
+    TooltipComponent,
   ],
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, OverlayModule],
   exports: [
     LoadingComponent,
     InputComponent,
@@ -31,6 +35,7 @@ import { SnackService } from './snack.service';
     SelectComponent,
     TextareaComponent,
     SnackComponent,
+    HintDirective,
   ],
 })
 export class ComponentsModule {}

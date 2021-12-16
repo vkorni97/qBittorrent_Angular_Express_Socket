@@ -1,4 +1,4 @@
-<div class="pageContainer">
+<div class="pageContainer" *ngIf="torrents.getTorrent; else loading">
   <div class="filterPanel">
     <div class="speedContainer">
       <div class="download">
@@ -80,10 +80,6 @@
 
   <div class="downloadPanel">
     <cdk-virtual-scroll-viewport [itemSize]="70" class="torrentContainer">
-      <!-- <app-torrent-item
-        *cdkVirtualFor="let item of torrents.torrents|filter:selectedFilters:torrents.Filters:sortByState"
-        [item]="item.value" [key]="item.key">
-      </app-torrent-item> -->
       <app-torrent-item
         *cdkVirtualFor="let item of torrents.getTorrent|keyvalue:sortByState|filter:selectedFilters:torrents.filters; let even = even"
         [item]="item.value" [key]="item.key" [ngClass]="{'even': !even}">
@@ -91,3 +87,7 @@
     </cdk-virtual-scroll-viewport>
   </div>
 </div>
+
+<ng-template #loading>
+  <app-loading></app-loading>
+</ng-template>

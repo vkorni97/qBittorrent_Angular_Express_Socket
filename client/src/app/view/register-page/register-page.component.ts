@@ -1,7 +1,7 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { SnackService } from 'src/app/modules/components/snack.service';
+import { SnackService } from 'src/app/modules/components/services/snack.service';
 import { AuthService } from 'src/app/services/auth.service';
 import { SocketService } from 'src/app/services/socket.service';
 

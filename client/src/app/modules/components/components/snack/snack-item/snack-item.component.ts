@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Subscription, timer } from 'rxjs';
-import { Alert } from '../../interface';
+import { Alert } from '../../../interfaces/interface';
 
 @Component({
   selector: 'app-snack-item',
